@@ -91,19 +91,11 @@ export default function GalleryPage() {
                   onClick={() => setLightboxImage(img.src)}
                 >
                   <div className="relative rounded-2xl overflow-hidden bg-gradient-to-br from-maroon-100 to-gold-100 dark:from-maroon-950 dark:to-gray-800">
-                    <div className={`aspect-${i % 3 === 0 ? '[3/4]' : i % 3 === 1 ? 'square' : '[4/3]'} flex items-center justify-center`}
-                      style={{ aspectRatio: i % 3 === 0 ? '3/4' : i % 3 === 1 ? '1/1' : '4/3' }}
-                    >
-                      <div className="text-center p-6">
-                        <div className="w-16 h-16 rounded-full bg-white/20 dark:bg-white/5 flex items-center justify-center mx-auto mb-3">
-                          <ZoomIn className="w-6 h-6 text-maroon-400 dark:text-gray-600" />
-                        </div>
-                        <p className="text-sm text-maroon-400 dark:text-gray-600 font-medium">{img.alt}</p>
-                        <span className="inline-block mt-2 text-xs px-3 py-1 rounded-full bg-white/30 dark:bg-white/5 text-maroon-600 dark:text-gray-500">
-                          {img.category}
-                        </span>
-                      </div>
-                    </div>
+                    <img
+                      src={`${import.meta.env.BASE_URL}${img.src.startsWith('/') ? img.src.slice(1) : img.src}`}
+                      alt={img.alt}
+                      className="w-full h-auto object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500 flex items-center justify-center">
                       <ZoomIn className="w-8 h-8 text-white opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-50 group-hover:scale-100" />
                     </div>
@@ -133,18 +125,24 @@ export default function GalleryPage() {
               <X className="w-6 h-6" />
             </button>
             <motion.div
-              initial={{ scale: 0.9 }}
-              animate={{ scale: 1 }}
-              exit={{ scale: 0.9 }}
-              className="max-w-4xl w-full rounded-2xl overflow-hidden bg-gradient-to-br from-maroon-100 to-gold-100 dark:from-maroon-950 dark:to-gray-800 aspect-video flex items-center justify-center"
+              initial={{ scale: 0.9, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.9, opacity: 0 }}
+              className="max-w-5xl w-full max-h-[90vh] rounded-2xl overflow-hidden bg-white dark:bg-gray-950 relative"
               onClick={e => e.stopPropagation()}
             >
-              <div className="text-center p-12">
-                <ZoomIn className="w-16 h-16 text-maroon-300 dark:text-gray-600 mx-auto mb-4" />
-                <p className="text-maroon-500 dark:text-gray-500 text-lg">
+              <img
+                src={`${import.meta.env.BASE_URL}${lightboxImage.startsWith('/') ? lightboxImage.slice(1) : lightboxImage}`}
+                alt="Selected"
+                className="w-full h-full object-contain"
+              />
+              <div className="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                <p className="text-white text-lg font-medium">
                   {galleryImages.find(img => img.src === lightboxImage)?.alt}
                 </p>
-                <p className="text-sm text-maroon-400 dark:text-gray-600 mt-2">Image placeholder — add your actual photos</p>
+                <p className="text-gray-300 text-sm">
+                  {galleryImages.find(img => img.src === lightboxImage)?.category}
+                </p>
               </div>
             </motion.div>
           </motion.div>

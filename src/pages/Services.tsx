@@ -101,8 +101,12 @@ export default function ServicesPage() {
                     </Link>
                   </div>
                   <div className={isReversed ? 'lg:order-1' : ''}>
-                    <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-maroon-100 to-gold-100 dark:from-maroon-950 dark:to-gray-800 flex items-center justify-center">
-                      <Icon className="w-24 h-24 text-maroon-300 dark:text-gray-700" />
+                    <div className="rounded-2xl overflow-hidden aspect-[4/3] bg-gradient-to-br from-maroon-100 to-gold-100 dark:from-maroon-950 dark:to-gray-800">
+                      <img
+                        src={`${import.meta.env.BASE_URL}${service.image.startsWith('/') ? service.image.slice(1) : service.image}`}
+                        alt={service.title}
+                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                      />
                     </div>
                   </div>
                 </motion.div>
