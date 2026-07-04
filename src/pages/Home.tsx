@@ -3,11 +3,11 @@ import { motion } from 'framer-motion';
 import {
   ArrowRight, Star, ChefHat, Users, Calendar, Award,
   Heart, Building2, TreePine, Home, Sparkles, Crown,
-  Phone, CheckCircle2,
+  Phone, CheckCircle2, MessageCircle,
 } from 'lucide-react';
 import SEO from '@/components/seo/SEO';
 import SectionHeading from '@/components/ui/SectionHeading';
-import { stats, testimonials, services } from '@/data/siteData';
+import { stats, testimonials, services, siteConfig } from '@/data/siteData';
 
 const iconMap: Record<string, React.ElementType> = {
   Heart, Building2, TreePine, Home, Sparkles, Crown,
@@ -28,8 +28,14 @@ export default function HomePage() {
       {/* ========== HERO ========== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-maroon-950 to-gray-900" />
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gold-500/30 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gray-950">
+          <img
+            src={`${import.meta.env.BASE_URL}assets/slider/wedding-dining-setup.jpg`}
+            alt="Traditional Wedding Setup"
+            className="w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900/80 via-maroon-950/70 to-gray-900/80" />
+        </div>
         {/* Decorative floating elements */}
         <div className="absolute top-20 left-10 w-72 h-72 bg-gold-500/10 rounded-full blur-3xl animate-float" />
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-maroon-500/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '3s' }} />
@@ -89,12 +95,15 @@ export default function HomePage() {
               Book Your Event
               <ArrowRight className="w-5 h-5" />
             </Link>
-            <Link
-              to="/menu"
+            <a
+              href={`https://wa.me/${siteConfig.whatsapp}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-10 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-all duration-300 text-lg"
             >
-              Explore Menu
-            </Link>
+              <MessageCircle className="w-5 h-5 text-green-400" />
+              WhatsApp Inquiry
+            </a>
           </motion.div>
         </div>
 
@@ -143,14 +152,18 @@ export default function HomePage() {
               transition={{ duration: 0.7 }}
               className="relative"
             >
-              <div className="relative rounded-2xl overflow-hidden aspect-[4/5] bg-gradient-to-br from-maroon-100 to-gold-100 dark:from-maroon-950 dark:to-gray-900">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center p-8">
-                    <ChefHat className="w-20 h-20 text-maroon-700 dark:text-gold-500 mx-auto mb-4" />
-                    <p className="font-heading text-2xl font-bold text-maroon-800 dark:text-gold-400">
+              <div className="relative rounded-2xl overflow-hidden aspect-[4/5]">
+                <img
+                  src={`${import.meta.env.BASE_URL}assets/others/statewide-service-banner.jpg`}
+                  alt="Sri Jayam Catering Service"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-maroon-900/80 via-transparent to-transparent flex items-end p-8">
+                  <div className="text-white">
+                    <p className="font-heading text-3xl font-bold text-gold-400">
                       30+ Years
                     </p>
-                    <p className="text-gray-600 dark:text-gray-400 mt-2">of Traditional Excellence</p>
+                    <p className="text-ivory-200 mt-1">of Traditional Excellence</p>
                   </div>
                 </div>
               </div>
@@ -243,8 +256,8 @@ export default function HomePage() {
               { icon: ChefHat, title: 'Authentic Taste', desc: 'Cooked with fresh, handpicked ingredients and traditional methods.' },
               { icon: Users, title: 'Large-Scale Expertise', desc: 'Proven capability to manage events from 50 to 10,000 guests flawlessly.' },
               { icon: Calendar, title: 'End-to-End Service', desc: 'Complete arrangements from Mangala Vaathiyam to Return Gift Bags.' },
-              { icon: Heart, title: 'VIP Trust', desc: 'Trusted by ashrams, celebrities, and respected community leaders.' },
-              { icon: TreePine, title: 'Serving Statewide', desc: 'Serving Chennai, Pondicherry, Pattukottai, Mayiladudurai, and beyond.' },
+              { icon: Heart, title: 'Celebrity & VIP Trust', desc: 'Trusted by ashrams, respected families, and community leaders.' },
+              { icon: TreePine, title: 'Statewide Presence', desc: 'Serving Chennai, Pondicherry, Pattukottai, Mayiladudurai, and beyond.' },
             ].map((item, i) => (
               <motion.div
                 key={item.title}
@@ -331,11 +344,13 @@ export default function HomePage() {
                 Get Free Quote
               </Link>
               <a
-                href="tel:+919444227423"
+                href={`https://wa.me/${siteConfig.whatsapp}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-10 py-4 border-2 border-white/30 text-white rounded-full hover:bg-white/10 transition-all duration-300 text-lg"
               >
-                <Phone className="w-5 h-5" />
-                Call Now
+                <MessageCircle className="w-5 h-5 text-green-500" />
+                WhatsApp Us
               </a>
             </div>
           </motion.div>

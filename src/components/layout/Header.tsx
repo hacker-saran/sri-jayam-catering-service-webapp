@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Phone } from 'lucide-react';
 import ThemeToggle from '../ui/ThemeToggle';
 import { siteConfig } from '@/data/siteData';
-import logo from '../../../assets/logo.png';
+const logo = `${import.meta.env.BASE_URL}assets/sri-jayam-logo.png`;
 
 const navLinks = [
   { to: '/', label: 'Home' },

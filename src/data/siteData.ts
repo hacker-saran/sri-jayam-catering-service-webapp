@@ -3,7 +3,7 @@ export const siteConfig = {
   proprietor: 'R. Viswanathan',
   tagline: 'Pure Vegetarian Catering with Tradition & Excellence',
   description:
-    'Premium pure vegetarian catering for weddings and events in Chennai. Traditional South Indian cuisine crafted with love, heritage, and culinary excellence.',
+    'Founded by Mr. R. Viswanathan, Sri Jayam Marriage Service offers premier pure vegetarian catering rooted in tradition, discipline, and sincere hospitality. With 30+ years of excellence, we serve families across Chennai and Tamil Nadu with authentic taste and dependable service.',
   phone: ['+91 94442 27423', '+91 94444 82842', '+91 90439 27423'],
   email: ['jayamcatering71@gmail.com', 'aswinviswanathan04@gmail.com'],
   branches: [
@@ -29,68 +29,74 @@ export const services = [
     title: 'Wedding Catering',
     subtitle: 'Grand Traditional Feasts',
     description:
-      'Create unforgettable wedding celebrations with our signature South Indian vegetarian menus. From elaborate banana-leaf meals to modern buffet spreads, we craft culinary experiences that honor tradition while delighting every palate.',
-    highlights: ['Traditional banana-leaf meals', 'Custom wedding menus', 'Brahmin vegetarian specialty', 'Live cooking stations'],
+      'We specialize in traditional Brahmin vegetarian catering and all kinds of South Indian weddings. Our strength lies in understanding rituals, food sequencing, precise timing, and attentive guest service—all essential elements of a successful wedding.',
+    highlights: ['Traditional Brahmin catering', 'Banana-leaf meals', 'Ritual-aware sequencing', 'Attentive guest service'],
     icon: 'Heart',
+    image: '/assets/services/wedding-catering.png',
   },
   {
     id: 'corporate-catering',
-    title: 'Corporate Catering',
-    subtitle: 'Professional & Refined',
+    title: 'Corporate Events',
+    subtitle: 'Professional & Disciplined',
     description:
-      'Elevate your corporate events with our premium vegetarian catering. From board meetings to annual celebrations, we deliver impeccable service and exquisite cuisine that reflects your company\'s standards.',
-    highlights: ['Business lunch packages', 'Conference catering', 'Annual day celebrations', 'Team gathering menus'],
+      'From corporate functions to community celebrations, we deliver consistent quality and authentic taste. Our team handles every event with the same discipline and sincere hospitality that has defined us for decades.',
+    highlights: ['Corporate functions', 'Community celebrations', 'Consistent quality', 'Dependable service'],
     icon: 'Building2',
+    image: '/assets/slider/premium-buffet-setup.jpg',
   },
   {
     id: 'temple-functions',
     title: 'Temple & Large Scale Functions',
-    subtitle: 'Divine & Traditional',
+    subtitle: 'Divine & Massive',
     description:
-      'We specialize in handling large-scale catering for temple functions and community celebrations. With experience serving up to 10,000 guests, we ensure flawless execution and authentic taste for spiritual gatherings.',
-    highlights: ['Large scale temple functions', 'Community celebrations', 'Ashram event expertise', 'Mass catering management'],
+      'Expertise in handling large-scale events, including catering for 10,000+ guests for temple inaugurations and ashram events. We manage the complexity of massive gatherings with flawless execution.',
+    highlights: ['10,000+ guest capacity', 'Temple inaugurations', 'Ashram events', 'Complex logistics'],
     icon: 'Sparkles',
+    image: '/assets/slider/wedding-dining-setup.jpg',
   },
   {
     id: 'house-functions',
     title: 'House Functions',
-    subtitle: 'Intimate Celebrations',
+    subtitle: 'Sacred Traditions',
     description:
-      'From griha pravesham to upanayanam, we bring the same level of excellence to intimate home celebrations. Our team works closely with you to create menus perfect for family gatherings and traditional ceremonies.',
-    highlights: ['Griha pravesham', 'Upanayanam ceremonies', 'Sathabishekam celebrations', 'Family gatherings'],
+      'Dedicated catering for Upanayanams, Sathabishekam celebrations, and other religious ceremonies. We respect the sanctity of every ritual and provide food that honors tradition.',
+    highlights: ['Upanayanams', 'Sathabishekams', 'Religious ceremonies', 'Traditional recipes'],
     icon: 'Home',
+    image: '/assets/services/traditional-seer-gifts.png',
   },
   {
     id: 'receptions',
     title: 'Receptions & Modern Events',
-    subtitle: 'Contemporary Elegance',
+    subtitle: 'Contemporary Heritage',
     description:
-      'Blending tradition with modern tastes, we offer exquisite catering for wedding receptions and contemporary celebrations. Our diverse menu options ensure a delightful experience for guests of all ages.',
-    highlights: ['Modern buffet spreads', 'Variety rice stations', 'Global fusion starters', 'Signature dessert counters'],
+      'Bridging tradition and modern preferences, our reception catering features diverse vegetarian menus that delight every guest while maintaining our core values of taste and quality.',
+    highlights: ['Modern reception menus', 'Diverse buffet options', 'Fusion appetizers', 'Premium desserts'],
     icon: 'Crown',
+    image: '/assets/services/live-snacks-stall.png',
   },
   {
     id: 'outdoor-catering',
-    title: 'Outdoor Catering',
-    subtitle: 'Excellence Anywhere',
+    title: 'Statewide Service',
+    subtitle: 'Serving Beyond Boundaries',
     description:
-      'Serving families across Tamil Nadu and beyond. Our mobile catering units bring authentic taste to Pondicherry, Pattukottai, Mayiladudurai, Karaikal, and more.',
-    highlights: ['State-wide service', 'Mobile kitchen capability', 'Any location service', 'Complete event management'],
+      'We serve families across Tamil Nadu, with a strong presence in Pondicherry, Pattukottai, Mayiladudurai, Karaikal, Thanjavur, and Chennai.',
+    highlights: ['Pondicherry & Karaikal', 'Pattukottai & Mayiladudurai', 'Chennai & Thanjavur', 'Statewide logistics'],
     icon: 'TreePine',
+    image: '/assets/others/statewide-service-banner.jpg',
   },
 ];
 
 export const traditionalServices = [
   { title: 'Mangala Vaathiyam', subtitle: 'Traditional Wedding Music', icon: 'Music' },
-  { title: 'Pushpam Maalaigal', subtitle: 'Flower Garlands & Decorations', icon: 'Flower2' },
-  { title: 'Seer Patchanangal', subtitle: 'Traditional Gift Arrangements', icon: 'Gift' },
+  { title: 'Pushpam Maalaigal', subtitle: 'Flower Garlands', icon: 'Flower2' },
+  { title: 'Seer Patchanangal', subtitle: 'Traditional Gift Items', icon: 'Gift' },
   { title: 'Vaitheega Samangal', subtitle: 'Priestly Arrangements', icon: 'BookOpen' },
-  { title: 'Printing & Gift Bags', subtitle: 'Custom Printing Services', icon: 'Printer' },
-  { title: 'Aarthi Plates', subtitle: 'Decorative Ceremonial Plates', icon: 'CircleDot' },
-  { title: 'Traditional Essentials', subtitle: 'Kolam, Vettrilai, Seeval & More', icon: 'Leaf' },
+  { title: 'Printing & Gift Bags', subtitle: 'Thambula Pai & Cards', icon: 'Printer' },
+  { title: 'Aarthi Plates', subtitle: 'Ceremonial Plates', icon: 'CircleDot' },
+  { title: 'Traditional Essentials', subtitle: 'Kolam, Vettrilai, Seeval, Pakku', icon: 'Leaf' },
   { title: 'Snacks Stalls', subtitle: 'Chats, Momos, Thattu Vadai', icon: 'UtensilsCrossed' },
-  { title: 'Ice Cream & Sweets', subtitle: 'Premium Dessert Stalls', icon: 'IceCreamCone' },
-  { title: 'Peeda & Kattusaadham', subtitle: 'Signature Specialties', icon: 'ChefHat' },
+  { title: 'Ice Cream & Sweet Stalls', subtitle: 'Premium Dessert Counters', icon: 'IceCreamCone' },
+  { title: 'Peeda & Kattusaadham', subtitle: 'Traditional Specialties', icon: 'ChefHat' },
 ];
 
 export const menuCategories = [
@@ -188,17 +194,12 @@ export const stats = [
 ];
 
 export const galleryImages = [
-  { src: '/gallery/wedding-setup.jpg', alt: 'Grand wedding dining setup', category: 'Weddings' },
-  { src: '/gallery/banana-leaf.jpg', alt: 'Traditional banana leaf meal', category: 'Food' },
-  { src: '/gallery/buffet-spread.jpg', alt: 'Premium buffet arrangement', category: 'Events' },
-  { src: '/gallery/dessert-counter.jpg', alt: 'Elaborate dessert counter', category: 'Food' },
-  { src: '/gallery/ceremony-setup.jpg', alt: 'Traditional ceremony setup', category: 'Weddings' },
-  { src: '/gallery/live-counter.jpg', alt: 'Live dosa cooking station', category: 'Food' },
-  { src: '/gallery/outdoor-event.jpg', alt: 'Outdoor event catering', category: 'Events' },
-  { src: '/gallery/flower-decor.jpg', alt: 'Flower decoration arrangement', category: 'Weddings' },
-  { src: '/gallery/thali-spread.jpg', alt: 'Grand thali presentation', category: 'Food' },
-  { src: '/gallery/sweet-display.jpg', alt: 'Traditional sweets display', category: 'Food' },
-  { src: '/gallery/hall-decor.jpg', alt: 'Marriage hall decoration', category: 'Events' },
-  { src: '/gallery/serving-style.jpg', alt: 'Traditional serving style', category: 'Weddings' },
+  { src: '/assets/slider/wedding-dining-setup.jpg', alt: 'Grand wedding dining setup', category: 'Weddings' },
+  { src: '/assets/slider/premium-buffet-setup.jpg', alt: 'Premium buffet arrangement', category: 'Events' },
+  { src: '/assets/services/wedding-catering.png', alt: 'Traditional South Indian Catering', category: 'Food' },
+  { src: '/assets/services/wedding-flower-garlands.png', alt: 'Traditional Flower Decorations', category: 'Weddings' },
+  { src: '/assets/services/traditional-wedding-music.png', alt: 'Traditional Wedding Music', category: 'Events' },
+  { src: '/assets/services/traditional-seer-gifts.png', alt: 'Traditional Seer arrangements', category: 'Weddings' },
+  { src: '/assets/services/live-snacks-stall.png', alt: 'Live Snacks Stall', category: 'Food' },
 ];
 
