@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { UtensilsCrossed } from 'lucide-react';
 import SEO from '@/components/seo/SEO';
@@ -103,9 +104,9 @@ export default function MenuPage() {
             <p className="text-gray-500 dark:text-gray-500 text-sm mb-4">
               Our menus are fully customizable to suit your preferences and dietary requirements.
             </p>
-            <a href="/contact" className="btn-primary">
+            <Link to="/contact" className="btn-primary">
               Request Custom Menu
-            </a>
+            </Link>
           </div>
         </div>
       </section>

@@ -149,10 +149,10 @@ export default function AboutPage() {
                 </div>
                 <div className="space-y-4 text-gray-600 dark:text-gray-400">
                   <p>
-                    Hailing from Thiruvengadu in Nagai District, Mr. Viswanathan came to Chennai in 1991 with a B.Sc. degree and a simple goal of an honest livelihood.
+                    "I am R. Viswanathan, from Thiruvengadu in Nagai District. After graduating from Poompuhar College with a B.Sc., I came to Chennai in 1991, simply seeking an honest livelihood."
                   </p>
                   <p>
-                    From a modest start in his cousin's catering business, he quickly mastered the craft, eventually founding Sri Jayam Marriage Service and growing it into one of Tamil Nadu's most respected names in catering.
+                    Starting in his cousin's catering business for a modest salary, Mr. Viswanathan quickly mastered the craft. Within six months, he learned the technical and logistical intricacies of catering, laying the foundation for what would become Sri Jayam Marriage Service.
                   </p>
                 </div>
               </motion.div>
@@ -161,19 +161,19 @@ export default function AboutPage() {
               {[
                 {
                   title: 'Career Milestones',
-                  content: 'Handle numerous prestigious assignments including catering for 10,000 guests at the Shiva Sankara Baba Ashram inauguration and supplying snacks/beverages to Mrs. Latha Rajinikanth\'s ashram school (1999-2004).',
+                  content: 'Handling numerous prestigious assignments, including catering for 10,000 guests at the Shiva Sankara Baba Ashram inauguration and supplying snacks/beverages to Mrs. Latha Rajinikanth\'s ashram school between 1999 and 2004.',
                 },
                 {
                   title: 'Resilience & Growth',
-                  content: 'Memorable challenges, like catering two major events simultaneously in 1994 despite an accident affecting the team, shaped our commitment to reliability.',
+                  content: 'In January 1994, despite a team accident, Mr. Viswanathan successfully catered two major events on the same day—one for renowned writers Pattukottai Prabakar and Subha—shaping our commitment to reliability.',
                 },
                 {
                   title: 'A Proud Honor',
-                  content: 'The prestigious Arusuvai Rathna Award serves as a proud moment reflecting our dedication and the trust of our valued clients.',
+                  content: 'Honored with the prestigious Arusuvai Rathna Award, a milestone that reflects our dedication, hard work, and the enduring trust and love of our clients across Tamil Nadu.',
                 },
                 {
-                  title: 'Family & Philosophy',
-                  content: 'Today, run with family—wife, son, and daughter—Sri Jayam continues to treat every client\'s celebration as its own with unwavering honesty and dedication.',
+                  title: 'Origins & Philosophy',
+                  content: 'Graduating with a B.Sc. from Poompuhar College, Mr. Viswanathan moved to Chennai in 1991. Today, run with family, Sri Jayam treats every celebration with unwavering honesty and dedication.',
                 },
               ].map((item, i) => (
                 <motion.div
