@@ -129,15 +129,6 @@ pnpm deploy
 
 ---
 
-## 🏛️ Office Branches
-
-* **Main Branch (Chennai)**:  
-  28/53, Naickamar Street, West Mambalam, Chennai – 600033
-* **Pondicherry Branch**:  
-  Plot No.29, Easwaran Koil Street, Marry Oulgraet, Pondicherry – 10
-
----
-
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.
